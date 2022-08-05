@@ -155,7 +155,23 @@
 <!-- CORE SCRIPTS-->
 <script src="assets/js/app.min.js" type="text/javascript"></script>
 <!-- PAGE LEVEL SCRIPTS-->
+<script src="./assets/vendors/DataTables/datatables.min.js" type="text/javascript"></script>
 <script src="./assets/js/scripts/dashboard_1_demo.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function() {
+        $('#example-table').DataTable({
+            pageLength: 10,
+            //"ajax": './assets/demo/data/table_data.json',
+            /*"columns": [
+                { "data": "name" },
+                { "data": "office" },
+                { "data": "extn" },
+                { "data": "start_date" },
+                { "data": "salary" }
+            ]*/
+        });
+    })
+</script>
 </body>
 
 </html>
